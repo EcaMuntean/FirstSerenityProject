@@ -6,8 +6,9 @@ public class CartTest extends BaseTest {
 
     @Test
     public void loginAndAddToCartTest(){
-        loginSteps.doLogin("cosmin@fasttrackit.org","123456");
+        loginSteps.doLogin("vultur_eca@yahoo.com","123456");
         searchSteps.navigateToProductName("SILVER DESERT NECKLACE");
         cartSteps.addProductToCart();
+        cartSteps.checkSuccessMessage("Silver Desert Necklace");
     }
 }

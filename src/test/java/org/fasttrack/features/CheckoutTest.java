@@ -9,6 +9,7 @@ public class CheckoutTest extends BaseTest{
         loginSteps.doLogin("cosmin@fasttrackit.org","123456");
         searchSteps.navigateToProductName("SILVER DESERT NECKLACE");
         cartSteps.addProductToCart();
-//        checkoutSteps.
+        cartSteps.checkSuccessMessage("Silver Desert Necklace");
+//      checkoutSteps.
     }
 }
